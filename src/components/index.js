@@ -1,4 +1,6 @@
+export Container from "./Container"
 export RoundedButton from "./RoundedButton"
 export Title from "./Title"
 export Button from "./Button"
+export Gallery from "./Gallery"
 export Image from "./Image"
