@@ -1,11 +1,15 @@
 export default {
   spacings: {
     small: 5,
+    medium: 10,
     base: 20,
     large: 40,
   },
   buttons: {
-    height: 84,
+    heights: {
+      base: 50,
+      large: 84,
+    },
   },
   images: {
     small: 200,

@@ -5,8 +5,9 @@ import { SafeAreaView, StyleSheet, View } from "react-native"
 // styles
 import { Colors, Metrics } from "../themes"
 
-type ContainerProps = {
+export type ContainerProps = {
   children: React.Node,
+  stretched?: boolean,
 }
 
 const styles = StyleSheet.create({
@@ -17,17 +18,25 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: Colors.background,
     paddingHorizontal: Metrics.spacings.base,
-    paddingTop: Metrics.spacings.large,
+    paddingTop: Metrics.spacings.base,
+  },
+  containerStretched: {
+    paddingHorizontal: 0,
+    paddingTop: 0,
   },
 })
 
 export default class Detail extends React.Component<ContainerProps> {
   render() {
-    const { children } = this.props
+    const { children, stretched } = this.props
 
     return (
       <SafeAreaView style={styles.outerWrapper}>
-        <View style={styles.container}>{children}</View>
+        <View
+          style={[styles.container, stretched ? styles.containerStretched : {}]}
+        >
+          {children}
+        </View>
       </SafeAreaView>
     )
   }

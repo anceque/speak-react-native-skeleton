@@ -5,7 +5,7 @@ import Colors from "../themes/Colors"
 
 const styles = StyleSheet.create({
   text: {
-    color: Colors.primary,
+    color: Colors.textPrimary,
     fontWeight: "bold",
     fontSize: 32,
     lineHeight: 48,
