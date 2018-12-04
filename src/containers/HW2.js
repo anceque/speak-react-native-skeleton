@@ -14,7 +14,7 @@ export default class HW2 extends React.PureComponent {
   })
 
   navigateToDetail = cat => {
-    this.props.navigation.navigate("Detail", { item: cat })
+    this.props.navigation.navigate("CatDetail", { item: cat })
   }
 
   render() {

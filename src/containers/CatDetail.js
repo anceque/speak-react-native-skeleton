@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   },
 })
 
-export default class Detail extends React.Component {
+export default class CatDetail extends React.Component {
   render() {
     const { item } = this.props.navigation.state.params
     return (
